@@ -2,7 +2,8 @@ name: Update Filter Lists
 
 on:
   schedule:
-    - cron: "0 3 * * 1"
+    # Chạy hàng ngày vào lúc 03:00 sáng giờ Việt Nam (20:00 UTC)
+    - cron: "0 20 * * *"
   push:
     branches:
       - main
